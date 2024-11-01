@@ -1,0 +1,299 @@
+Atividade Lógica C - Estrutura Sequencial
+
+1) Faça um programa que leia um número inteiro e o imprima. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num1, num2;
+    
+    num1 = 0;
+    num2 = 0;
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &num1);
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &num2);
+    
+    printf("\nO primeiro numero é: %d", num1);
+    printf("\nO segundo numero é: %d", num2);
+
+
+    system("pause");
+    return 0;
+}
+
+
+2) Faça um programa que leia um número real e o imprima. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float num1, num2;
+    
+    num1 = 0;
+    num2 = 0;
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%f", &num1);
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%f", &num2);
+    
+    printf("\nO primeiro numero é: %f", num1);
+    printf("\nO segundo numero é: %f", num2);
+
+
+    system("pause");
+    return 0;
+}
+
+
+
+3) Peça ao usuário para digitar três valores inteiros e imprima a soma deles.
+
+#include <stdio.h>
+#include <stdlib.h>
+	
+int main()
+{
+    int num1, num2, num3;
+    int soma;
+    
+    num1 = 0;
+    num2 = 0;
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &num1);
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &num2);
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%d", &num3);
+    
+   soma = num1 + num2 + num3;
+   
+   printf("A soma desses numeros é: %d", soma);
+
+
+    system("pause");
+    return 0;
+}
+
+
+
+4) Leia um número real e imprima o resultado do quadrado desse número. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float num1, num2, num3;
+    float soma;
+    
+    num1 = 0;
+    num2 = 0;
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%f", &num1);
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%f", &num2);
+    
+    printf("\nDigite um numero inteiro: ");
+    scanf("%f", &num3);
+    
+   num1 = num1 * num1;
+   num2 = num2 * num2;
+   num3 = num3 * num3;
+   
+   printf("A soma desse numero é: %f\n", num1);
+   
+    printf("A soma desse numero é: %f\n", num2);
+    
+    printf("A soma desse numero é: %f\n", num3);
+    
+    system("pause");
+    return 0;
+}
+
+
+
+5) Leia um número real e imprima a quinta parte deste número. 
+#include <stdio.h>
+
+int main()
+{
+    float num, quintaParte;
+    
+    printf("Digite um numero: ");
+    scanf("%f", &num);
+    
+    quintaParte = num /5;
+    
+    printf("A quinta parte de %.2f é %.2f\n", num, quintaParte);
+
+    return 0;
+}
+
+
+
+
+6) Leia uma temperatura em graus Celsius e apresente-a convertida em graus Fahrenheit. A formula de conversão é: 𝐹 = 𝐶 ∗ (9.0 / 5.0) + 32.0, sendo F a temperatura em Fahrenheit e C a temperatura em Celsius. 
+
+#include <stdio.h>
+
+int main()
+{
+    float celsius, fahrenheit;
+    
+    printf("Digite a temperatura em graus Celsius: ");
+    scanf("%f", &celsius);
+    
+    fahrenheit = celsius *(9.0 / 5.0) + 32.0;
+    
+    printf("%.2f graus Celsius é igual a %.2f graus fahrenheit\n", celsius, fahrenheit);
+ 
+    return 0;
+}
+
+
+
+
+
+7) Leia uma temperatura em graus Fahrenheit e apresente-a convertida em graus Celsius. A formula de conversão é: 𝐶 = 5.0 ∗ (𝐹 – 32.0) 9.0 , sendo C a temperatura em Celsius e F a temperatura em Fahrenheit. 
+
+#include <stdio.h>
+
+int main()
+{
+    float celsius, fahrenheit;
+    
+    printf("Digite a temperatura em graus fahrenheit: ");
+    scanf("%f", &fahrenheit);
+    
+    celsius = 5.0 * (fahrenheit - 32.0)/ 9.0;
+    
+    printf("%.2f graus fahrenheit é igual a %.2f graus celsius\n", fahrenheit, celsius);
+ 
+    return 0;
+}
+
+
+
+8) Leia uma temperatura em graus Kelvin e apresente-a convertida em graus Celsius. A formula de conversão é: 𝐶 = 𝐾 – 273.15, sendo C a temperatura em Celsius e K a temperatura em Kelvin. 
+
+#include <stdio.h>
+
+int main()
+{
+    float celsius, kelvin;
+    
+    printf("Digite a temperatura em graus kelvin: ");
+    scanf("%f", &kelvin);
+    
+    celsius = kelvin - 273.15;
+    
+    printf("%.2f graus kelvin é igual a %.2f graus celsius\n", kelvin, celsius);
+ 
+    return 0;
+}
+
+
+
+9) Leia uma temperatura em graus Celsius e apresente-a convertida em graus Kelvin. A formula de conversão é: 𝐾 = 𝐶 + 273.15, sendo C a temperatura em Celsius e K a temperatura em Kelvin. 
+
+#include <stdio.h>
+
+int main()
+{
+    float celsius, kelvin;
+    
+    printf("Digite a temperatura em graus celsius: ");
+    scanf("%f", &kelvin);
+    
+    kelvin = kelvin + 273.15;
+    
+    printf("%.2f graus celsius é igual a %.2f graus kelvin\n", kelvin, kelvin);
+ 
+    return 0;
+}
+
+
+
+10) Leia uma velocidade em km/h (quilômetros por hora) e apresente-a convertida em m/s (metros por segundo). A formula de conversão é: 𝑀 = 𝐾 3.6 , sendo K a velocidade em km/h e M em m/s. 
+
+#include <stdio.h>
+
+int main()
+{
+     float kmh, ms;
+    
+    
+    printf("Digite uma velocidade me km/h: ");
+    scanf("%f", &kmh);
+    
+    
+    ms = kmh / 3.6;
+    
+    printf("%.2f km/h é igual a %.2f m/s\n", kmh, ms);
+ 
+    return 0;
+}
+
+
+
+11) Leia uma velocidade em m/s (metros por segundo) e apresente-a convertida em km/h (quilômetros por hora). A formula de conversão é: 𝐾 = 𝑀 ∗ 3.6, sendo K a velocidade em km/h e M em m/s.
+
+#include <stdio.h>
+
+int main()
+{
+     float kmh, ms;
+    
+    
+    printf("Digite uma velocidade em m/s: ");
+    scanf("%f", &ms);
+    
+    
+    kmh = ms * 3.6;
+    
+    printf("%.2f km/h é igual a %.2f m/s\n", ms, kmh);
+ 
+    return 0;
+}
+
+
+
+
+12)A importância de R$ 780.000,00 será dividida entre três ganhadores de um concurso. Sendo que da quantia total:  O primeiro ganhador recebera 46%;  O segundo recebera 32%;  O terceiro recebera o restante. Calcule e imprima a quantia ganha por cada um dos ganhadores.
+
+#include <stdio.h>
+
+int main()
+{
+    float total = 780000.00;
+    float prim, seg, ter;
+    
+    prim = total * 0.46;
+    seg = total * 0.32;
+    ter = total - (prim + seg);
+    
+    
+    printf("O primeiro ganhador receberá: R$ %.2f\n", prim);
+    printf("O segundo ganhador receberá: R$ %.2f\n", seg);
+    printf("O terceiro ganhador receberá: R$ %.2f\n", ter);
+    
+    return 0;
+}
+
+
+
+
